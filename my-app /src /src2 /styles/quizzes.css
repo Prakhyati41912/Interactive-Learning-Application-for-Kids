@@ -1,0 +1,172 @@
+/* Quiz Card Wrapper */
+.quiz-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Quiz Card */
+.quiz-card {
+  background-color: #000; /* Black background */
+  text-decoration: none;
+  color: #fff; /* White text */
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.quiz-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.2); /* White glow effect */
+  background-color: #111; /* Darker black on hover */
+}
+
+.quiz-icon {
+  font-size: 60px;
+  color: #f8f6f0; /* Gold icon */
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.quiz-card:hover .quiz-icon {
+  transform: scale(1.1);
+}
+
+.quiz-category {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f5f3ed; /* Gold category text */
+}
+
+.quiz-description {
+  font-size: 16px;
+  color: #bbb; /* Light gray description text */
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+.quiz-card:hover .quiz-description {
+  color: #f1c40f; /* Gold text on hover */
+}
+/* Report Button */
+/* Report Button Container */
+/* Report Button Container */
+/* Report Button Container */
+.report-container {
+  position: absolute;
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Small Report Button */
+.report-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Adjust padding for better appearance */
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width:100px;
+}
+
+.report-button:hover {
+  background-color: darkred;
+}
+
+/* Dropdown Container */
+.report-dropdown-container {
+  position: absolute;
+  top: 40px; /* Position below the report button */
+  right: 30px;
+  background: white;
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 260px;
+  text-align: left;
+}
+
+.report-dropdown-container h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.report-dropdown {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.report-textarea {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.report-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-report,
+.cancel-report {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submit-report {
+  background-color: green;
+  color: white;
+}
+
+.cancel-report {
+  background-color: gray;
+  color: white;
+}
+
+.submit-report:hover {
+  background-color: darkgreen;
+}
+
+.cancel-report:hover {
+  background-color: darkgray;
+}
+/* Feedback Section */
+.feedback {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.feedback button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.feedback button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
