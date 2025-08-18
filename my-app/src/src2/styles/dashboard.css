@@ -1,0 +1,71 @@
+/* Full screen layout */
+.app-container {
+  display: flex;
+  height: 100vh; /* Take full screen height */
+  overflow: hidden;
+  background-color: #9b9a9c;
+}
+
+.dashboard {
+  width: 250px;
+  height: 100vh;
+  background: rgb(19, 18, 18);
+  color: rgb(21, 21, 21);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Keep sidebar fixed on the left */
+  top: 0;
+  left: 0;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: rgb(247, 241, 241);
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Sidebar links */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 15px 0;
+}
+
+nav ul li a {
+  display: flex !important;
+  align-items: center;
+  color: rgb(234, 228, 228);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #f3460d;
+}
+
+/* Ensure icons are properly displayed */
+.icon {
+  display: inline-block !important;
+  font-size: 1.5rem !important; /* Ensure icons are visible */
+  width: 30px; /* Prevent shrinking */
+  margin-right: 10px; /* Add spacing */
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  margin-left: 250px; /* Ensure content does not go under sidebar */
+  padding: 20px;
+  overflow: auto; /* Enable scrolling inside content area if needed */
+}
